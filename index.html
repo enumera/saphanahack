@@ -1,0 +1,48 @@
+<html>
+<head>
+  <title>Sap Hana App</title>
+  <link rel="stylesheet" href="style.css"/>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.25/angular.min.js"></script>
+  <script src="https://maps.googleapis.com/maps/api/js?v=3.exp&libraries=visualization"></script>
+  <script src="app.js"></script>
+   
+</head>
+<body>
+
+<div id="title">
+<p>SAP Hana App</p>
+</div>
+<div id="container">
+<div id="map_canvas"></div>
+
+<!-- <div id="selector"></div> -->
+
+
+<div ng-app="SapHana">
+  <div ng-controller="SapHanaController">
+    <div id="selector">
+      <p>Categories</p>
+      <div ng-repeat = "category in categories">
+        <input type="checkbox" value={{category}}>{{category}}</input>
+      </div>
+    </div>
+  
+ 
+    <!-- {{musicGenre}} -->
+    <!-- <input type="hidden" id="location" value="{{flickrPhotoInfo}}" ></input> -->
+     <!--  <div id="container" class="clearfix">
+
+        <div ng-repeat = "photo in flickrPhotoUrls">
+
+          <img src="{{photo}}" />
+
+        </div>
+      </div> -->
+  </div>
+</div>
+</div>
+</body>
+<!-- <script src="location.js"></script> -->
+  <script src="location.js"></script>
+</html>
