@@ -2,13 +2,13 @@ body {
 
   
   box-sizing: border-box;
-  background-color: black;
-  color: white;
+  /*background-color: black;*/
+  color: orange;
 
 }
 #selector{
   position: relative;
-  background-color: red;
+  background-color: white;
   top: 100px;
   width: 150px;
   height: 300px;
