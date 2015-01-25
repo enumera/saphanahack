@@ -64,11 +64,7 @@ var heatMapData = [
   {location: new google.maps.LatLng(58.4, -6.830), weight: 10},
   {location: new google.maps.LatLng(58.3, -6.930), weight: 10},
   // new google.maps.LatLng(37.782, -122.437),
-  {location: new google.maps.LatLng(59.2, -7.930), weight: 50},
-   {location: new google.maps.LatLng(59.2, -8.000), weight: 50},
-  {location: new google.maps.LatLng(58.2, -7.930), weight: 50},
-    {location: new google.maps.LatLng(58.2, -8.000), weight: 50},
-      {location: new google.maps.LatLng(58.2, -8.100), weight: 50},
+
  
 ];
 
@@ -92,8 +88,8 @@ heatMapData2 = [
 
 $(document.body).on("change", '.category_x', function(){
 console.log("this works");
-  locations = locations2
-  console.log(locations);
+  heatMapData = heatMapData2
+  // console.log(locations);
   initialize();
   setUpData();
 })
@@ -157,18 +153,15 @@ var mapOptions = {
       mapOptions);
  
   
-  pointArray = new google.maps.MVCArray(heatMapData2);
-    pointArray2 = new google.maps.MVCArray(heatMapData);
+  pointArray = new google.maps.MVCArray(heatMapData);
+    // pointArray2 = new google.maps.MVCArray(heatMapData);
   
   heatmap = new google.maps.visualization.HeatmapLayer({
     data: pointArray,
     gradient: gradient
   });
 
-    heatmap2 = new google.maps.visualization.HeatmapLayer({
-    data: pointArray2,
-    // gradient: gradient
-  });
+ 
 
  
   // changeGradient();

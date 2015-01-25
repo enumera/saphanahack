@@ -15,7 +15,7 @@ function shuffle(o){ //v1.0
     $scope.flickrPhotoUrls = [];
     $scope.flickrPhotosx = [];
     $scope.url = "";
-    $scope.categories = ['Fish Farms', 'Plankton Type A (PA)', 'Plankton Type B (PB)', 'PA Possible Future location', 'PB Possible Future Location']
+    $scope.categories = ['Show Plankton Type A (PA)']
     // $scope.musicGenre = ['skiiing', 'winter%20sport'];
     // $scope.locationWord = "in%20London";
 
